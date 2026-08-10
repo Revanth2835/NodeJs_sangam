@@ -4,5 +4,7 @@
 <h1>Welcome to HomePage</h1>
 <label for="">List of Products</label>
 <ul>
-
+    <% products.forEach(product => { %>
+        <li> <%= product.title %> </li>
+    <% }) %>    
 </ul>

@@ -27,7 +27,7 @@ console.log("New File content Added: ",)
 const aysncFilePath = path.join(dataFolder,'async-example.txt')
 fs.writeFile(aysncFilePath,"Hello Async Node js",(err)=>{
     if(err) throw err;
-    console.log('Aync file created Succesfully')
+    console.log('Async file created Succesfully')
 
     fs.readFile(aysncFilePath,'utf8',(err,data)=>{
         if(err) throw err;
@@ -35,11 +35,13 @@ fs.writeFile(aysncFilePath,"Hello Async Node js",(err)=>{
         fs.appendFile(aysncFilePath,'\nThis is another line added',(err)=>{
             if(err) throw err;
             console.log("New Line Added asysnc file")
-        })
-        fs.readFile(aysncFilePath,'utf8',(err,updatedData)=>{
+
+            fs.readFile(aysncFilePath,'utf8',(err,updatedData)=>{
             if(err) throw err;
             console.log("Updated Data: ",updatedData)
         })
+        })
+       
 
     })
 })

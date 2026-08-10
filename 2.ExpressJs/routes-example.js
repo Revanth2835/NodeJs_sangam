@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
     res.send("Welcome to our home page1")
 })
 
-//get sll Products 
+//get all Products 
 app.get('/products',(req,res)=>{
     const products = [
         {
@@ -27,6 +27,7 @@ app.get('/products',(req,res)=>{
     ]
     res.json(products)
 })
+
 
 // get a single projcet 
 //products/2

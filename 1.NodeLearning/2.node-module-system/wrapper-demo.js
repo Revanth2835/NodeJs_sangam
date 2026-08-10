@@ -3,6 +3,6 @@ const wrapperExplorer = require('./wrapper-explorer')
 
 console.log("in wrapper demo.js")
 
-console.log("'__filename",__filename)
-console.log("'__dirname",__dirname) 
+console.log("__filename",__filename)
+console.log("__dirname",__dirname) 
 wrapperExplorer.greet("Revanth")

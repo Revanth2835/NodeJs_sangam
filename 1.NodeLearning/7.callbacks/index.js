@@ -8,7 +8,7 @@ function person(name,calllbackFn){
 }
 
 function address(){
-    console.log("INdia")
+    console.log("India")
 }
 
 person("Revanth",address)

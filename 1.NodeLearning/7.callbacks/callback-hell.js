@@ -7,7 +7,7 @@ fs.readFile('index.txt','utf8',(err,data)=>{
     }
     const modifyFileData = data.toUpperCase();
 
-    fs.writeFile('output.txt',modifyFileData,err=>{
+    fs.writeFile('output.txt',modifyFileData,(err)=>{
         console.error("Error writing File ",err)
         return
     })

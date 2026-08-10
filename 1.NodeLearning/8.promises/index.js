@@ -1,6 +1,3 @@
-const { time } = require("node:console");
-const { resolve } = require("node:dns");
-
 function delayFn(time){ 
 return new Promise((resolve)=>setTimeout(resolve,time))
 }
@@ -20,6 +17,6 @@ function divideFn(num1,num2){
         }
     })
 }
-divideFn(10,0)
+divideFn(10,10)
 .then(result=>console.log(result))
 .catch(error=>console.log(error))
